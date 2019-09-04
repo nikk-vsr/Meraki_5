@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "sortMalloc.h"
+
 
 static void sort_swap(int*,int*);
 
 void sort_ascending(int** arr, int rows, int cols){
-    int i, j, k, l;
+    int i, j, k, l,M,N;
 
     for(i=0; i<rows; i++){
             for (j=0;j<cols; j++){
@@ -23,7 +23,7 @@ void sort_ascending(int** arr, int rows, int cols){
         }
 }
 
-void sort_descending(int** arr, int rows, int cols){
+void SORT_descending(int** arr, int rows, int cols){
     int i, j, k, l;
 
     for(i=0; i<rows; i++){
