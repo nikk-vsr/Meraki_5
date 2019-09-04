@@ -1,0 +1,15 @@
+language: c
+sudo: false # only for faster builds
+script:
+  - gcc -o test Sorting.c
+  - gcc -o test dyn_sort.c
+  - gcc -o test file1.c
+  - gcc -o test quick_sort.c
+  - gcc -o test s_o_r_t.c
+  - gcc -o test sortMalloc.c
+  - gcc -o test sorting_array.c
+  - ./test
+
+
+
+
